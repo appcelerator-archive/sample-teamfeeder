@@ -1,0 +1,680 @@
+================================================================================
+Appcelerator Titanium Diagnostics Build Log
+The contents of this file are useful to send to Appcelerator Support if
+reporting an issue to help us understand your environment, build settings
+and aid in debugging. Please attach this log to any issue that you report.
+================================================================================
+
+Starting build at 09/20/11 06:43
+
+Build details:
+
+   timestamp=07/21/11 09:36
+   version=1.7.2
+   githash=97c3689
+
+
+Script arguments:
+   /Library/Application Support/Titanium/mobilesdk/osx/1.7.2 copy/iphone/builder.py
+   simulator
+   4.3
+   /Users/kevin/dev/appc/workspace/TeamFeeder
+   com.appcelerator.teamfeeder
+   TeamFeeder
+   universal
+   iphone
+   
+
+Building from: /Library/Application Support/Titanium/mobilesdk/osx/1.7.2 copy/iphone
+Platform: Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386
+
+Xcode path is: /Developer
+
+
+githash=97c3689, existing_git_hash=None
+forcing rebuild since libhash (None) not matching (b1b8b21fe7f2a50eabcaacbb1edebc4e)
+Performing full rebuild
+Generated the following stylecode code:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>classes</key>
+		<dict>
+</dict>
+
+		<key>classes_density</key>
+		<dict>
+</dict>
+
+		<key>ids</key>
+		<dict>
+</dict>
+
+		<key>ids_density</key>
+		<dict>
+</dict>
+
+		<key>tags</key>
+		<dict>
+</dict>
+
+		<key>tags_density</key>
+		<dict>
+</dict>
+
+	</dict>
+</plist>
+Performing clean build...
+Starting Xcode compile with the following arguments:
+
+    xcodebuild
+    -target
+    TeamFeeder-universal
+    -configuration
+    Debug
+    -sdk
+    iphonesimulator4.3
+    GCC_PREPROCESSOR_DEFINITIONS=__LOG__ID__=c965cc27-abab-4320-ad96-97afc21ef50b DEPLOYTYPE=development TI_DEVELOPMENT=1 DEBUG=1 TI_VERSION=1.7.2 copy 
+    IPHONEOS_DEPLOYMENT_TARGET=3.1
+    TARGETED_DEVICE_FAMILY=1,2
+    VALID_ARCHS=armv6 armv7 i386
+
+app_id = com.appcelerator.teamfeeder
+
+
+Build settings from command line:
+    GCC_PREPROCESSOR_DEFINITIONS = __LOG__ID__=c965cc27-abab-4320-ad96-97afc21ef50b DEPLOYTYPE=development TI_DEVELOPMENT=1 DEBUG=1 TI_VERSION=1.7.2 copy 
+    IPHONEOS_DEPLOYMENT_TARGET = 3.1
+    SDKROOT = iphonesimulator4.3
+    TARGETED_DEVICE_FAMILY = 1,2
+    VALID_ARCHS = armv6 armv7 i386
+
+=== BUILD NATIVE TARGET TeamFeeder-universal OF PROJECT TeamFeeder WITH CONFIGURATION Debug ===
+Check dependencies
+
+ProcessInfoPlistFile build/Debug-iphonesimulator/TeamFeeder.app/Info.plist Info.plist
+    cd /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone
+    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-infoPlistUtility Info.plist -genpkginfo /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/Debug-iphonesimulator/TeamFeeder.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/Debug-iphonesimulator/TeamFeeder.app/Info.plist
+
+CpResource module.xcconfig build/Debug-iphonesimulator/TeamFeeder.app/module.xcconfig
+    cd /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone
+    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/module.xcconfig /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/Debug-iphonesimulator/TeamFeeder.app
+
+CopyPlistFile build/Debug-iphonesimulator/TeamFeeder.app/stylesheet.plist Resources/stylesheet.plist
+    cd /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone
+    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copyPlist --convert binary1 --outdir /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/Debug-iphonesimulator/TeamFeeder.app -- Resources/stylesheet.plist
+
+CopyPlistFile build/Debug-iphonesimulator/TeamFeeder.app/debugger.plist Resources/debugger.plist
+    cd /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone
+    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copyPlist --convert binary1 --outdir /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/Debug-iphonesimulator/TeamFeeder.app -- Resources/debugger.plist
+
+PhaseScriptExecution Pre-Compile build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/Script-DABB369F12E8CB280026A6EA.sh
+    cd /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone
+    setenv ACTION build
+    setenv ALTERNATE_GROUP staff
+    setenv ALTERNATE_MODE u+w,go-w,a+rX
+    setenv ALTERNATE_OWNER kevin
+    setenv ALWAYS_SEARCH_USER_PATHS NO
+    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer
+    setenv APPLE_INTERNAL_DIR /AppleInternal
+    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation
+    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library
+    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools
+    setenv APPLY_RULES_IN_COPY_FILES NO
+    setenv ARCHS i386
+    setenv ARCHS_STANDARD_32_BIT i386
+    setenv ARCHS_UNIVERSAL_IPHONE_OS i386
+    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"
+    setenv BUILD_COMPONENTS "headers build"
+    setenv BUILD_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build
+    setenv BUILD_ROOT /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build
+    setenv BUILD_STYLE Debug
+    setenv BUILD_VARIANTS normal
+    setenv BUILT_PRODUCTS_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/Debug-iphonesimulator
+    setenv CACHE_ROOT /var/folders/dD/dDdB6Le1EsKsPKy+xlRvpU+++TU/-Caches-/com.apple.Xcode.504
+    setenv CCHROOT /var/folders/dD/dDdB6Le1EsKsPKy+xlRvpU+++TU/-Caches-/com.apple.Xcode.504
+    setenv CHMOD /bin/chmod
+    setenv CHOWN /usr/sbin/chown
+    setenv CLASS_FILE_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/JavaClasses
+    setenv CLEAN_PRECOMPS YES
+    setenv CLONE_HEADERS NO
+    setenv CODESIGNING_FOLDER_PATH /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/Debug-iphonesimulator/TeamFeeder.app
+    setenv CODE_SIGN_IDENTITY "iPhone Developer"
+    setenv COMBINE_HIDPI_IMAGES NO
+    setenv COMMAND_MODE legacy
+    setenv COMPOSITE_SDK_DIRS /var/folders/dD/dDdB6Le1EsKsPKy+xlRvpU+++TU/-Caches-/com.apple.Xcode.504/CompositeSDKs
+    setenv COMPRESS_PNG_FILES YES
+    setenv CONFIGURATION Debug
+    setenv CONFIGURATION_BUILD_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/Debug-iphonesimulator
+    setenv CONFIGURATION_TEMP_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator
+    setenv CONTENTS_FOLDER_PATH TeamFeeder.app
+    setenv COPYING_PRESERVES_HFS_DATA NO
+    setenv COPY_PHASE_STRIP NO
+    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES
+    setenv CP /bin/cp
+    setenv CURRENT_ARCH i386
+    setenv CURRENT_VARIANT normal
+    setenv DEAD_CODE_STRIPPING NO
+    setenv DEBUGGING_SYMBOLS YES
+    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym
+    setenv DEPLOYMENT_LOCATION NO
+    setenv DEPLOYMENT_POSTPROCESSING NO
+    setenv DERIVED_FILES_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/DerivedSources
+    setenv DERIVED_FILE_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/DerivedSources
+    setenv DERIVED_SOURCES_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/DerivedSources
+    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications
+    setenv DEVELOPER_BIN_DIR /Developer/usr/bin
+    setenv DEVELOPER_DIR /Developer
+    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks
+    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""
+    setenv DEVELOPER_LIBRARY_DIR /Developer/Library
+    setenv DEVELOPER_SDK_DIR /Developer/SDKs
+    setenv DEVELOPER_TOOLS_DIR /Developer/Tools
+    setenv DEVELOPER_USR_DIR /Developer/usr
+    setenv DEVELOPMENT_LANGUAGE English
+    setenv DOCUMENTATION_FOLDER_PATH TeamFeeder.app/English.lproj/Documentation
+    setenv DO_HEADER_SCANNING_IN_JAM NO
+    setenv DSTROOT /tmp/TeamFeeder.dst
+    setenv DWARF_DSYM_FILE_NAME TeamFeeder.app.dSYM
+    setenv DWARF_DSYM_FOLDER_PATH /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/Debug-iphonesimulator
+    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator
+    setenv ENABLE_HEADER_DEPENDENCIES YES
+    setenv ENABLE_OPENMP_SUPPORT NO
+    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"
+    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn .git *.xcodeproj *.xcode *.pbproj *.pbxproj"
+    setenv EXECUTABLES_FOLDER_PATH TeamFeeder.app/Executables
+    setenv EXECUTABLE_FOLDER_PATH TeamFeeder.app
+    setenv EXECUTABLE_NAME TeamFeeder
+    setenv EXECUTABLE_PATH TeamFeeder.app/TeamFeeder
+    setenv FILE_LIST /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/Objects/LinkFileList
+    setenv FIXED_FILES_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/FixedFiles
+    setenv FRAMEWORKS_FOLDER_PATH TeamFeeder.app/Frameworks
+    setenv FRAMEWORK_FLAG_PREFIX -framework
+    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/Debug-iphonesimulator\" "
+    setenv FRAMEWORK_VERSION A
+    setenv FULL_PRODUCT_NAME TeamFeeder.app
+    setenv GCC3_VERSION 3.3
+    setenv GCC_C_LANGUAGE_STANDARD c99
+    setenv GCC_DYNAMIC_NO_PIC NO
+    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES
+    setenv GCC_OBJC_LEGACY_DISPATCH YES
+    setenv GCC_OPTIMIZATION_LEVEL 0
+    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"
+    setenv GCC_PRECOMPILE_PREFIX_HEADER YES
+    setenv GCC_PREFIX_HEADER TeamFeeder_Prefix.pch
+    setenv GCC_PREPROCESSOR_DEFINITIONS "__LOG__ID__=c965cc27-abab-4320-ad96-97afc21ef50b DEPLOYTYPE=development TI_DEVELOPMENT=1 DEBUG=1 TI_VERSION=1.7.2 copy "
+    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES
+    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO
+    setenv GCC_VERSION com.apple.compilers.llvmgcc42
+    setenv GCC_WARN_ABOUT_RETURN_TYPE NO
+    setenv GCC_WARN_MISSING_PARENTHESES NO
+    setenv GCC_WARN_SHADOW NO
+    setenv GCC_WARN_STRICT_SELECTOR_MATCH NO
+    setenv GCC_WARN_UNUSED_FUNCTION YES
+    setenv GCC_WARN_UNUSED_PARAMETER NO
+    setenv GCC_WARN_UNUSED_VALUE NO
+    setenv GCC_WARN_UNUSED_VARIABLE NO
+    setenv GENERATE_MASTER_OBJECT_FILE NO
+    setenv GENERATE_PKGINFO_FILE YES
+    setenv GENERATE_PROFILING_CODE NO
+    setenv GID 20
+    setenv GROUP staff
+    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES
+    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES
+    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES
+    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES
+    setenv HEADER_SEARCH_PATHS "\"/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/Debug-iphonesimulator/include\" /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/libxml2 headers"
+    setenv ICONV /usr/bin/iconv
+    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES
+    setenv INFOPLIST_FILE Info.plist
+    setenv INFOPLIST_OUTPUT_FORMAT binary
+    setenv INFOPLIST_PATH TeamFeeder.app/Info.plist
+    setenv INFOPLIST_PREPROCESS NO
+    setenv INFOSTRINGS_PATH TeamFeeder.app/English.lproj/InfoPlist.strings
+    setenv INSTALL_DIR /tmp/TeamFeeder.dst/Applications
+    setenv INSTALL_GROUP staff
+    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX
+    setenv INSTALL_OWNER kevin
+    setenv INSTALL_PATH /Applications
+    setenv INSTALL_ROOT /tmp/TeamFeeder.dst
+    setenv IPHONEOS_DEPLOYMENT_TARGET 3.1
+    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"
+    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub
+    setenv JAVA_ARCHIVE_CLASSES YES
+    setenv JAVA_ARCHIVE_TYPE JAR
+    setenv JAVA_COMPILER /usr/bin/javac
+    setenv JAVA_FOLDER_PATH TeamFeeder.app/Java
+    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources
+    setenv JAVA_JAR_FLAGS cv
+    setenv JAVA_SOURCE_SUBDIR .
+    setenv JAVA_USE_DEPENDENCIES YES
+    setenv JAVA_ZIP_FLAGS -urg
+    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"
+    setenv KEEP_PRIVATE_EXTERNS NO
+    setenv LD_GENERATE_MAP_FILE NO
+    setenv LD_MAP_FILE_PATH /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/TeamFeeder-LinkMap-normal-i386.txt
+    setenv LD_OPENMP_FLAGS -fopenmp
+    setenv LEGACY_DEVELOPER_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer
+    setenv LEX /Developer/usr/bin/lex
+    setenv LIBRARY_FLAG_NOSPACE YES
+    setenv LIBRARY_FLAG_PREFIX -l
+    setenv LIBRARY_SEARCH_PATHS "\"/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/Debug-iphonesimulator\"  \"/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/lib\" \"/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/../../../../tmp/staticlib/build/Debug-iphonesimulator\" \"/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/../../../tijs/TiCore/TiCore/build/Release-iphonesimulator\""
+    setenv LINKER_DISPLAYS_MANGLED_NAMES NO
+    setenv LINK_FILE_LIST_normal_i386 /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/Objects-normal/i386/TeamFeeder.LinkFileList
+    setenv LINK_WITH_STANDARD_LIBRARIES YES
+    setenv LOCALIZED_RESOURCES_FOLDER_PATH TeamFeeder.app/English.lproj
+    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities
+    setenv LOCAL_APPS_DIR /Applications
+    setenv LOCAL_DEVELOPER_DIR /Library/Developer
+    setenv LOCAL_LIBRARY_DIR /Library
+    setenv MACH_O_TYPE mh_execute
+    setenv MACOSX_DEPLOYMENT_TARGET 10.6
+    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 10K549
+    setenv MAC_OS_X_VERSION_ACTUAL 1068
+    setenv MAC_OS_X_VERSION_MAJOR 1060
+    setenv MAC_OS_X_VERSION_MINOR 0608
+    setenv NATIVE_ARCH i386
+    setenv NATIVE_ARCH_32_BIT i386
+    setenv NATIVE_ARCH_64_BIT x86_64
+    setenv NATIVE_ARCH_ACTUAL x86_64
+    setenv NO_COMMON YES
+    setenv OBJC_ABI_VERSION 2
+    setenv OBJECT_FILE_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/Objects
+    setenv OBJECT_FILE_DIR_normal /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/Objects-normal
+    setenv OBJROOT /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build
+    setenv ONLY_ACTIVE_ARCH NO
+    setenv OPTIMIZATION_LEVEL 0
+    setenv OS MACOS
+    setenv OSAC /usr/bin/osacompile
+    setenv OTHER_CFLAGS "-DIPAD -DTI_POST_1_2 -DDEBUG"
+    setenv OTHER_CPLUSPLUSFLAGS "-DIPAD -DTI_POST_1_2 -DDEBUG"
+    setenv OTHER_LDFLAGS "-ObjC -weak_framework iAd"
+    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application
+    setenv PASCAL_STRINGS YES
+    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"
+    setenv PBDEVELOPMENTPLIST_PATH TeamFeeder.app/pbdevelopment.plist
+    setenv PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"
+    setenv PKGINFO_FILE_PATH /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/PkgInfo
+    setenv PKGINFO_PATH TeamFeeder.app/PkgInfo
+    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Applications
+    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin
+    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library
+    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs
+    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Tools
+    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr
+    setenv PLATFORM_DIR /Developer/Platforms/iPhoneSimulator.platform
+    setenv PLATFORM_NAME iphonesimulator
+    setenv PLATFORM_PREFERRED_ARCH i386
+    setenv PLATFORM_PRODUCT_BUILD_VERSION 8H7
+    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 40300
+    setenv PLIST_FILE_OUTPUT_FORMAT binary
+    setenv PLUGINS_FOLDER_PATH TeamFeeder.app/PlugIns
+    setenv PREBINDING NO
+    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES
+    setenv PRECOMP_DESTINATION_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/PrefixHeaders
+    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO
+    setenv PRIVATE_HEADERS_FOLDER_PATH TeamFeeder.app/PrivateHeaders
+    setenv PRODUCT_NAME TeamFeeder
+    setenv PRODUCT_SETTINGS_PATH /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/Info.plist
+    setenv PRODUCT_TYPE com.apple.product-type.application
+    setenv PROFILING_CODE NO
+    setenv PROJECT TeamFeeder
+    setenv PROJECT_DERIVED_FILE_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/DerivedSources
+    setenv PROJECT_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone
+    setenv PROJECT_FILE_PATH /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder.xcodeproj
+    setenv PROJECT_NAME TeamFeeder
+    setenv PROJECT_TEMP_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build
+    setenv PUBLIC_HEADERS_FOLDER_PATH TeamFeeder.app/Headers
+    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES
+    setenv REMOVE_CVS_FROM_RESOURCES YES
+    setenv REMOVE_GIT_FROM_RESOURCES YES
+    setenv REMOVE_SVN_FROM_RESOURCES YES
+    setenv REZ_COLLECTOR_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/ResourceManagerResources
+    setenv REZ_OBJECTS_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/ResourceManagerResources/Objects
+    setenv REZ_SEARCH_PATHS "\"/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/Debug-iphonesimulator\" "
+    setenv RUN_CLANG_STATIC_ANALYZER NO
+    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO
+    setenv SCRIPTS_FOLDER_PATH TeamFeeder.app/Scripts
+    setenv SCRIPT_INPUT_FILE_COUNT 0
+    setenv SCRIPT_OUTPUT_FILE_COUNT 0
+    setenv SDKROOT /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
+    setenv SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
+    setenv SDK_NAME iphonesimulator4.3
+    setenv SDK_PRODUCT_BUILD_VERSION 8H7
+    setenv SED /usr/bin/sed
+    setenv SEPARATE_STRIP NO
+    setenv SEPARATE_SYMBOL_EDIT NO
+    setenv SET_DIR_MODE_OWNER_GROUP YES
+    setenv SET_FILE_MODE_OWNER_GROUP NO
+    setenv SHALLOW_BUNDLE YES
+    setenv SHARED_DERIVED_FILE_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/Debug-iphonesimulator/DerivedSources
+    setenv SHARED_FRAMEWORKS_FOLDER_PATH TeamFeeder.app/SharedFrameworks
+    setenv SHARED_PRECOMPS_DIR /var/folders/dD/dDdB6Le1EsKsPKy+xlRvpU+++TU/-Caches-/com.apple.Xcode.504/SharedPrecompiledHeaders
+    setenv SHARED_SUPPORT_FOLDER_PATH TeamFeeder.app/SharedSupport
+    setenv SKIP_INSTALL NO
+    setenv SOURCE_ROOT /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone
+    setenv SRCROOT /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone
+    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic
+    setenv STRINGS_FILE_OUTPUT_ENCODING binary
+    setenv STRIP_INSTALLED_PRODUCT YES
+    setenv STRIP_STYLE all
+    setenv SUPPORTED_DEVICE_FAMILIES "1 2"
+    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"
+    setenv SYMBOL_REPOSITORY_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/SymbolRepositories
+    setenv SYMROOT /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build
+    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities
+    setenv SYSTEM_APPS_DIR /Applications
+    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices
+    setenv SYSTEM_DEMOS_DIR /Applications/Extras
+    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications
+    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin
+    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"
+    setenv SYSTEM_DEVELOPER_DIR /Developer
+    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"
+    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"
+    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"
+    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"
+    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"
+    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools
+    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"
+    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"
+    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr
+    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities
+    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation
+    setenv SYSTEM_LIBRARY_DIR /System/Library
+    setenv TARGETED_DEVICE_FAMILY 1,2
+    setenv TARGETNAME TeamFeeder-universal
+    setenv TARGET_BUILD_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/Debug-iphonesimulator
+    setenv TARGET_NAME TeamFeeder-universal
+    setenv TARGET_TEMP_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build
+    setenv TEMP_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build
+    setenv TEMP_FILES_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build
+    setenv TEMP_FILE_DIR /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build
+    setenv TEMP_ROOT /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build
+    setenv TEST_AFTER_BUILD YES
+    setenv TI_APPID com.appcelerator.teamfeeder
+    setenv TI_SDK_DIR "/Library/Application Support/Titanium/mobilesdk/osx/1.7.2 copy/iphone"
+    setenv TI_VERSION "1.7.2 copy"
+    setenv UID 504
+    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH TeamFeeder.app
+    setenv UNSTRIPPED_PRODUCT NO
+    setenv USER kevin
+    setenv USER_APPS_DIR /Users/kevin/Applications
+    setenv USER_LIBRARY_DIR /Users/kevin/Library
+    setenv USE_DYNAMIC_NO_PIC YES
+    setenv USE_HEADERMAP YES
+    setenv USE_HEADER_SYMLINKS NO
+    setenv VALIDATE_PRODUCT NO
+    setenv VALID_ARCHS "armv6 armv7 i386"
+    setenv VERBOSE_PBXCP NO
+    setenv VERSIONPLIST_PATH TeamFeeder.app/version.plist
+    setenv VERSION_INFO_BUILDER kevin
+    setenv VERSION_INFO_FILE TeamFeeder_vers.c
+    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:TeamFeeder  PROJECT:TeamFeeder-\""
+    setenv WRAPPER_EXTENSION app
+    setenv WRAPPER_NAME TeamFeeder.app
+    setenv WRAPPER_SUFFIX .app
+    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode
+    setenv XCODE_PRODUCT_BUILD_VERSION 4A2002a
+    setenv XCODE_VERSION_ACTUAL 0402
+    setenv XCODE_VERSION_MAJOR 0400
+    setenv XCODE_VERSION_MINOR 0400
+    setenv YACC /Developer/usr/bin/yacc
+    /bin/sh -c /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/Script-DABB369F12E8CB280026A6EA.sh
+[INFO] One moment, building ...
+[TRACE] app property, ti.android.threadstacksize : 32768
+[TRACE] app property, ti.android.fastdev : false
+[DEBUG] Detecting modules in /Users/kevin/dev/appc/workspace/TeamFeeder/modules
+[DEBUG] Detecting modules in /Library/Application Support/Titanium/modules
+[INFO] Titanium SDK version: 1.7.2 copy
+[INFO] iPhone Device family: universal
+[INFO] iPhone SDK version: 4.3
+[DEBUG] copy resources from /Users/kevin/dev/appc/workspace/TeamFeeder/Resources/iphone to /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/Debug-iphonesimulator/TeamFeeder.app
+[INFO] Skipping JS compile, running from simulator
+
+ProcessPCH /var/folders/dD/dDdB6Le1EsKsPKy+xlRvpU+++TU/-Caches-/com.apple.Xcode.504/SharedPrecompiledHeaders/TeamFeeder_Prefix-fhjioabfjwtfbkgtninvcwgoymef/TeamFeeder_Prefix.pch.gch TeamFeeder_Prefix.pch normal i386 objective-c com.apple.compilers.llvmgcc42
+    cd /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone
+    setenv LANG en_US.US-ASCII
+    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wunused-function -D__LOG__ID__=c965cc27-abab-4320-ad96-97afc21ef50b -DDEPLOYTYPE=development -DTI_DEVELOPMENT=1 -DDEBUG=1 -DTI_VERSION=1.7.2 -Dcopy -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30100 -iquote /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/TeamFeeder-generated-files.hmap -I/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/TeamFeeder-own-target-headers.hmap -I/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/TeamFeeder-all-target-headers.hmap -iquote /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/TeamFeeder-project-headers.hmap -I/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/Debug-iphonesimulator/include -I/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/DerivedSources/i386 -I/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/DerivedSources -F/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/Debug-iphonesimulator -DIPAD -DTI_POST_1_2 -DDEBUG -c /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch -o /var/folders/dD/dDdB6Le1EsKsPKy+xlRvpU+++TU/-Caches-/com.apple.Xcode.504/SharedPrecompiledHeaders/TeamFeeder_Prefix-fhjioabfjwtfbkgtninvcwgoymef/TeamFeeder_Prefix.pch.gch
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/dispatch/source.h:31,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/dispatch/dispatch.h:51,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFMessagePort.h:11,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:53,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:6,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:6:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/mach/message.h:245: error: expected identifier or '(' before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/mach/message.h:246: error: expected ';' before 'unsigned'
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/mach/message.h:254: error: expected identifier or '(' before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/mach/message.h:255: error: expected ';' before 'unsigned'
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/mach/message.h:267: error: expected identifier or '(' before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/mach/message.h:268: error: expected ';' before 'unsigned'
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/mach/message.h:283: error: expected identifier or '(' before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/mach/message.h:284: error: expected ';' before 'mach_msg_type_name_t'
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/mach/message.h:292: error: expected identifier or '(' before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/mach/message.h:293: error: expected ';' before 'mach_msg_type_name_t'
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/mach/message.h:305: error: expected identifier or '(' before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/mach/message.h:306: error: expected ';' before 'mach_msg_type_name_t'
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSArray.h:5,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:10,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:6:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:81: error: expected ':' before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIView.h:9,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPickerView.h:10,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibilityAdditions.h:10,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibility.h:13,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:10,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIResponder.h:50: error: expected ':' before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPickerView.h:10,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibilityAdditions.h:10,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibility.h:13,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:10,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIView.h:173: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIView.h:214: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIView.h:264: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:10,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibility.h:50: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibility.h:59: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibility.h:69: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActionSheet.h:10,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAlert.h:8,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:12,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextField.h:120: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextField.h:125: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAlert.h:8,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:12,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActionSheet.h:117: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAlert.h:9,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:12,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAlertView.h:100: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAlertView.h:101: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:13,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h:220: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBarButtonItem.h:10,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:14,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBarItem.h:19: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:14,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBarButtonItem.h:84: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:21,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDatePicker.h:31: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDocumentInteractionController.h:10,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:23,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIViewController.h:124: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIViewController.h:132: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:23,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDocumentInteractionController.h:78: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDocumentInteractionController.h:79: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImagePickerController.h:9,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:30,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UINavigationController.h:82: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:30,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImagePickerController.h:85: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:31,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImageView.h:30: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImageView.h:31: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:33,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILabel.h:44: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:34,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:14: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:17: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:20: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:23: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:25: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:26: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:29: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:35: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:37,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIMenuController.h:38: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIMenuController.h:60: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:38,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UINavigationBar.h:69: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UINavigationBar.h:107: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UINavigationBar.h:111: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:45,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPasteboard.h:54: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPasteboard.h:76: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPasteboard.h:77: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPasteboard.h:79: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPasteboard.h:80: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPasteboard.h:82: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPasteboard.h:83: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPasteboard.h:85: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPasteboard.h:86: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:48,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPopoverController.h:83: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:50,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrintFormatter.h:50: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrintFormatter.h:63: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:51,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrintInfo.h:45: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrintInfo.h:46: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:52,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrintInteractionController.h:51: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrintInteractionController.h:52: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:53,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrintPageRenderer.h:31: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:58,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIScreen.h:41: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:61,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISearchBar.h:53: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISearchBar.h:54: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISearchBar.h:55: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISearchBar.h:70: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableView.h:12,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISearchDisplayController.h:12,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:62,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:154: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:195: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:65,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISplitViewController.h:31: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:69,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITabBar.h:35: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:70,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITabBarController.h:58: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITabBarController.h:67: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:71,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITabBarItem.h:58: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:77,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextInput.h:74: error: expected a property attribute before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextInput.h:85: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:79,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextView.h:76: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:80,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIToolbar.h:44: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:81,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITouch.h:63: error: expected a property attribute before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:82,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:7:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIVideoEditorController.h:31: error: expected a property attribute before numeric constant
+
+ProcessPCH /var/folders/dD/dDdB6Le1EsKsPKy+xlRvpU+++TU/-Caches-/com.apple.Xcode.504/SharedPrecompiledHeaders/TeamFeeder_Prefix-fnaqxcbtokaoaigbmvtcagbmvzgt/TeamFeeder_Prefix.pch.gch TeamFeeder_Prefix.pch normal i386 c com.apple.compilers.llvmgcc42
+    cd /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone
+    setenv LANG en_US.US-ASCII
+    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wunused-function -D__LOG__ID__=c965cc27-abab-4320-ad96-97afc21ef50b -DDEPLOYTYPE=development -DTI_DEVELOPMENT=1 -DDEBUG=1 -DTI_VERSION=1.7.2 -Dcopy -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -D__IPHONE_OS_VERSION_MIN_REQUIRED=30100 -iquote /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/TeamFeeder-generated-files.hmap -I/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/TeamFeeder-own-target-headers.hmap -I/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/TeamFeeder-all-target-headers.hmap -iquote /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/TeamFeeder-project-headers.hmap -I/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/Debug-iphonesimulator/include -I/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/DerivedSources/i386 -I/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/DerivedSources -F/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/Debug-iphonesimulator -DIPAD -DTI_POST_1_2 -DDEBUG -c /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch -o /var/folders/dD/dDdB6Le1EsKsPKy+xlRvpU+++TU/-Caches-/com.apple.Xcode.504/SharedPrecompiledHeaders/TeamFeeder_Prefix-fnaqxcbtokaoaigbmvtcagbmvzgt/TeamFeeder_Prefix.pch.gch
+
+ProcessPCH++ /var/folders/dD/dDdB6Le1EsKsPKy+xlRvpU+++TU/-Caches-/com.apple.Xcode.504/SharedPrecompiledHeaders/TeamFeeder_Prefix-hiuetlgiucmufhesqauobwubefmx/TeamFeeder_Prefix.pch.gch TeamFeeder_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvmgcc42
+    cd /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone
+    setenv LANG en_US.US-ASCII
+    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c++-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wunused-function -D__LOG__ID__=c965cc27-abab-4320-ad96-97afc21ef50b -DDEPLOYTYPE=development -DTI_DEVELOPMENT=1 -DDEBUG=1 -DTI_VERSION=1.7.2 -Dcopy -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fvisibility-inlines-hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30100 -iquote /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/TeamFeeder-generated-files.hmap -I/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/TeamFeeder-own-target-headers.hmap -I/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/TeamFeeder-all-target-headers.hmap -iquote /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/TeamFeeder-project-headers.hmap -I/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/Debug-iphonesimulator/include -I/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/DerivedSources/i386 -I/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/TeamFeeder.build/Debug-iphonesimulator/TeamFeeder-universal.build/DerivedSources -F/Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/build/Debug-iphonesimulator -DIPAD -DTI_POST_1_2 -DDEBUG -c /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch -o /var/folders/dD/dDdB6Le1EsKsPKy+xlRvpU+++TU/-Caches-/com.apple.Xcode.504/SharedPrecompiledHeaders/TeamFeeder_Prefix-hiuetlgiucmufhesqauobwubefmx/TeamFeeder_Prefix.pch.gch
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/dispatch/source.h:31,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/dispatch/dispatch.h:51,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFMessagePort.h:11,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:53,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:6,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:6:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/mach/message.h:245: error: expected unqualified-id before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/mach/message.h:254: error: expected unqualified-id before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/mach/message.h:267: error: expected unqualified-id before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/mach/message.h:283: error: expected unqualified-id before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/mach/message.h:292: error: expected unqualified-id before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/mach/message.h:305: error: expected unqualified-id before numeric constant
+In file included from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSArray.h:5,
+                 from /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:10,
+                 from /Users/kevin/dev/appc/workspace/TeamFeeder/build/iphone/TeamFeeder_Prefix.pch:6:
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:81: error: objective-c++ method declaration is expected before numeric constant
+/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:81: confused by earlier errors, bailing out
+
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	ProcessPCH /var/folders/dD/dDdB6Le1EsKsPKy+xlRvpU+++TU/-Caches-/com.apple.Xcode.504/SharedPrecompiledHeaders/TeamFeeder_Prefix-fhjioabfjwtfbkgtninvcwgoymef/TeamFeeder_Prefix.pch.gch TeamFeeder_Prefix.pch normal i386 objective-c com.apple.compilers.llvmgcc42
+	ProcessPCH++ /var/folders/dD/dDdB6Le1EsKsPKy+xlRvpU+++TU/-Caches-/com.apple.Xcode.504/SharedPrecompiledHeaders/TeamFeeder_Prefix-hiuetlgiucmufhesqauobwubefmx/TeamFeeder_Prefix.pch.gch TeamFeeder_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvmgcc42
+(2 failures)
+EXIT CODE WAS: 65
+
+Exception detected in script:
+Traceback (most recent call last):
+  File "/Library/Application Support/Titanium/mobilesdk/osx/1.7.2 copy/iphone/builder.py", line 1148, in main
+    execute_xcode("iphonesimulator%s" % link_version,["GCC_PREPROCESSOR_DEFINITIONS=__LOG__ID__=%s DEPLOYTYPE=development TI_DEVELOPMENT=1 DEBUG=1 TI_VERSION=%s %s" % (log_id,sdk_version,debugstr)],False)
+  File "/Library/Application Support/Titanium/mobilesdk/osx/1.7.2 copy/iphone/builder.py", line 1066, in execute_xcode
+    output = run.run(args,False,False,o)
+  File "/Library/Application Support/Titanium/mobilesdk/osx/1.7.2 copy/iphone/run.py", line 39, in run
+    sys.exit(rc)
+SystemExit: 65

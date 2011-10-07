@@ -1,0 +1,125 @@
+Logfile initialized
+[INFO] logfile = /Users/kevin/dev/appc/workspace/TeamFeeder/build.log
+[DEBUG] /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/builder.py simulator TeamFeeder /Users/kevin/dev/android/android-sdk-r10 /Users/kevin/dev/appc/workspace/TeamFeeder com.appcelerator.teamfeeder 11 HVGA 
+[INFO] Building TeamFeeder for Android ... one moment
+[INFO] Titanium SDK version: 1.7.3 (08/26/11 16:13 ac72fea...)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 25 seconds)
+[DEBUG] waited 25.079716 seconds on emulator to get ready
+[INFO] Waiting for the Android Emulator to become available
+[DEBUG] com.appcelerator.teamfeeder installed? True
+[INFO] Copying project resources..
+[INFO] Tiapp.xml unchanged, skipping class generation
+[DEBUG] Processing Android resource drawables
+[DEBUG] found drawable-long-land-hdpi splash screen at /Users/kevin/dev/appc/workspace/TeamFeeder/Resources/android/images/res-long-land-hdpi/default.png
+[DEBUG] found drawable-long-land-ldpi splash screen at /Users/kevin/dev/appc/workspace/TeamFeeder/Resources/android/images/res-long-land-ldpi/default.png
+[DEBUG] found drawable-long-port-hdpi splash screen at /Users/kevin/dev/appc/workspace/TeamFeeder/Resources/android/images/res-long-port-hdpi/default.png
+[DEBUG] found drawable-long-port-ldpi splash screen at /Users/kevin/dev/appc/workspace/TeamFeeder/Resources/android/images/res-long-port-ldpi/default.png
+[DEBUG] found drawable-notlong-land-hdpi splash screen at /Users/kevin/dev/appc/workspace/TeamFeeder/Resources/android/images/res-notlong-land-hdpi/default.png
+[DEBUG] found drawable-notlong-land-ldpi splash screen at /Users/kevin/dev/appc/workspace/TeamFeeder/Resources/android/images/res-notlong-land-ldpi/default.png
+[DEBUG] found drawable-notlong-land-mdpi splash screen at /Users/kevin/dev/appc/workspace/TeamFeeder/Resources/android/images/res-notlong-land-mdpi/default.png
+[DEBUG] found drawable-notlong-port-hdpi splash screen at /Users/kevin/dev/appc/workspace/TeamFeeder/Resources/android/images/res-notlong-port-hdpi/default.png
+[DEBUG] found drawable-notlong-port-ldpi splash screen at /Users/kevin/dev/appc/workspace/TeamFeeder/Resources/android/images/res-notlong-port-ldpi/default.png
+[DEBUG] found drawable-notlong-port-mdpi splash screen at /Users/kevin/dev/appc/workspace/TeamFeeder/Resources/android/images/res-notlong-port-mdpi/default.png
+[INFO] Waiting for SDCard to become available..
+[DEBUG] creating unsigned apk: /Users/kevin/dev/appc/workspace/TeamFeeder/build/android/bin/app-unsigned.apk
+[DEBUG] from resource zip => assets/Resources/data/network.js
+[DEBUG] from resource zip => assets/Resources/data/teamData.js
+[DEBUG] from resource zip => assets/Resources/images/teams/ari.png
+[DEBUG] from resource zip => assets/Resources/images/teams/atl.png
+[DEBUG] from resource zip => assets/Resources/images/teams/bal.png
+[DEBUG] from resource zip => assets/Resources/images/teams/bos.png
+[DEBUG] from resource zip => assets/Resources/images/teams/chc.png
+[DEBUG] from resource zip => assets/Resources/images/teams/chw.png
+[DEBUG] from resource zip => assets/Resources/images/teams/cin.png
+[DEBUG] from resource zip => assets/Resources/images/teams/cle.png
+[DEBUG] from resource zip => assets/Resources/images/teams/col.png
+[DEBUG] from resource zip => assets/Resources/images/teams/det.png
+[DEBUG] from resource zip => assets/Resources/images/teams/fla.png
+[DEBUG] from resource zip => assets/Resources/images/teams/hou.png
+[DEBUG] from resource zip => assets/Resources/images/teams/kan.png
+[DEBUG] from resource zip => assets/Resources/images/teams/laa.png
+[DEBUG] from resource zip => assets/Resources/images/teams/lad.png
+[DEBUG] from resource zip => assets/Resources/images/teams/mil.png
+[DEBUG] from resource zip => assets/Resources/images/teams/min.png
+[DEBUG] from resource zip => assets/Resources/images/teams/nym.png
+[DEBUG] from resource zip => assets/Resources/images/teams/nyy.png
+[DEBUG] from resource zip => assets/Resources/images/teams/oak.png
+[DEBUG] from resource zip => assets/Resources/images/teams/phi.png
+[DEBUG] from resource zip => assets/Resources/images/teams/pit.png
+[DEBUG] from resource zip => assets/Resources/images/teams/sdg.png
+[DEBUG] from resource zip => assets/Resources/images/teams/sea.png
+[DEBUG] from resource zip => assets/Resources/images/teams/sfg.png
+[DEBUG] from resource zip => assets/Resources/images/teams/stl.png
+[DEBUG] from resource zip => assets/Resources/images/teams/tam.png
+[DEBUG] from resource zip => assets/Resources/images/teams/tex.png
+[DEBUG] from resource zip => assets/Resources/images/teams/tor.png
+[DEBUG] from resource zip => assets/Resources/images/teams/was.png
+[DEBUG] from resource zip => assets/Resources/images/close.png
+[DEBUG] from resource zip => assets/Resources/images/ysports.jpg
+[DEBUG] from resource zip => assets/Resources/lib/require.js
+[DEBUG] from resource zip => assets/Resources/ui/android/AndroidWindow.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ArticleWebView.js
+[DEBUG] from resource zip => assets/Resources/ui/common/NewsTableView.js
+[DEBUG] from resource zip => assets/Resources/ui/common/TeamChooserTableView.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ToolTipView.js
+[DEBUG] from resource zip => assets/Resources/ui/ipad/NewsFeedView.js
+[DEBUG] from resource zip => assets/Resources/ui/ipad/NewsItemView.js
+[DEBUG] from resource zip => assets/Resources/ui/ipad/iPadWindow.js
+[DEBUG] from resource zip => assets/Resources/ui/iphone/iPhoneWindow.js
+[DEBUG] from resource zip => assets/Resources/app.js
+[DEBUG] from resource zip => assets/Resources/appicon.png
+[DEBUG] from resource zip => assets/Resources/default.png
+[DEBUG] from resource zip => assets/tiapp.xml
+[DEBUG] from resource zip => res/drawable/appicon.png
+[DEBUG] from resource zip => res/drawable/background.png
+[DEBUG] from resource zip => res/layout/titanium_tabgroup.xml
+[DEBUG] from resource zip => AndroidManifest.xml
+[DEBUG] from resource zip => resources.arsc
+[DEBUG] from resource zip => res/drawable-long-land-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-long-land-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-long-port-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-long-port-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-mdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-mdpi/background.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/smalljs.jar => org/mozilla/javascript/resources/Messages.properties
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/smalljs.jar => org/mozilla/javascript/resources/Messages_fr.properties
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/titanium.jar => org/apache/Commons-NOTICE.txt
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/titanium.jar => org/apache/HttpComponents-NOTICE.txt
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/titanium.jar => org/apache/mime4j-NOTICE.txt
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/titanium.jar => org/appcelerator/titanium/build.properties
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/titanium.jar => org/appcelerator/titanium/res/drawable/background.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.019862 seconds on emulator to get ready
+[INFO] Installing application on device
+[INFO] Launching application ... TeamFeeder
+[TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.appcelerator.teamfeeder/.TeamfeederActivity }
+
+[INFO] Deployed TeamFeeder ... Application should be running.
+[INFO] Android Emulator has exited
